@@ -35,8 +35,8 @@
                     <MenuItem Header="_Exit" />
                 </MenuItem>
                 <MenuItem Header="_File">
-                    <MenuItem Header="_New" />
-                    <MenuItem Header="_Open" />
+                    <MenuItem Header="_Report" />
+                    <MenuItem Header="_" />
                     <MenuItem Header="_Save" />
                     <Separator />
                     <MenuItem Header="_Exit" />
@@ -51,6 +51,6 @@
             </Menu>
             <TextBox AcceptsReturn="True" />
         </DockPanel>
-       
+        <WindowsFormsHost Name="WindowsFormsHost" Grid.Column="2" Grid.RowSpan="4"></WindowsFormsHost>
     </Grid>
 </Window>
