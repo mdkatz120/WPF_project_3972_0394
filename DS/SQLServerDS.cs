@@ -14,7 +14,7 @@ namespace DS
             throw new NotImplementedException();
         }
 
-        public bool insert()
+        public bool insert(Hit hit)
         {
             throw new NotImplementedException();
         }

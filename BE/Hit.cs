@@ -9,6 +9,7 @@ namespace BE
 {
     public class Hit
     {
+        public int id { get; set;}
         private DateTime hour ;
         public string name { get; set; }
         public string address { get; set; }

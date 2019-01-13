@@ -9,7 +9,7 @@ namespace DS
 {
     public interface Interface1
     {
-        bool insert();
+        bool insert(Hit hit);
         bool update();
         bool delete();
         Hit select(int HitNum);

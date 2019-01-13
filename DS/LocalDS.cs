@@ -9,12 +9,14 @@ namespace DS
 {
     public class LocalDS : Interface1
     {
+        public static HashSet<Hit> HitList = new HashSet<Hit>();
+
         public bool delete()
         {
             throw new NotImplementedException();
         }
 
-        public bool insert()
+        public bool insert(Hit hit)
         {
             throw new NotImplementedException();
         }
