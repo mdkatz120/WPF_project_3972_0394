@@ -7,6 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-            
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Label" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Label" HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Label" HorizontalAlignment="Left" Margin="23,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.427,3.09"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="139,32,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </UserControl>

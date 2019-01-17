@@ -53,5 +53,6 @@
             <TextBox AcceptsReturn="True" />
         </DockPanel>
         <m:Map x:Name="myMap" CredentialsProvider="Ail8XeUG5S087RcQf-lnjankqb-eMNLDTXt6CjqSAMI6uudDOHLBDI3w-Pfg0Paj" Mode="Aerial" Grid.Column="2" Grid.RowSpan="4"/>
+     
     </Grid>
 </Window>
