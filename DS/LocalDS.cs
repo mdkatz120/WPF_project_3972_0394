@@ -9,7 +9,8 @@ namespace DS
 {
     public class LocalDS : Interface1
     {
-        public static HashSet<Hit> HitList = new HashSet<Hit>();
+        public static HashSet<Hit> HitList = new HashSet<Hit> {new Hit() {name="Yair",Time=new DateTime(2018,1,17,00,32,12),hitNum=5,address="tveria, 25, jerusalem",id=1},
+                                                               new Hit() {name="Moshe ",Time=new DateTime(2018,2,17,17,13,45),hitNum=3,address="yaffo, 13, jerusalem",id=2} };
 
         public bool delete()
         {

@@ -5,13 +5,42 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WPF_project_3972_0394.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="440" d:DesignWidth="930">
     <Grid>
-        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy" Content="Label" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy1" Content="Label" HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy2" Content="Label" HorizontalAlignment="Left" Margin="23,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.427,3.09"/>
-        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="139,32,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="titlelbl" Content="Report" HorizontalContentAlignment="Center" VerticalAlignment="Top"  HorizontalAlignment="Stretch">
+            <Label.Background >
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFE64C1D" Offset="0.567"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="firstNamelbl" Content="First Name:" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label x:Name="lastNamelbl" Content="Last Name:" HorizontalAlignment="Left" Margin="395,33,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="2.608,0.446"/>
+        <Label x:Name="addresslbl" Content="Address:"  HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" FontSize="14px" FontWeight="Bold" RenderTransformOrigin="0.802,0.248" />
+        <Label x:Name="citylbl" Content="City:" HorizontalAlignment="Left" Margin="477,124,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="streetlbl" Content="Street:" HorizontalAlignment="Left" Margin="23,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.427,3.09"/>
+        <Label x:Name="numberlbl" Content="No." HorizontalAlignment="Left" Margin="289,124,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="numHitlbl" Content="Hits:" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="dateHitlbl" Content="Date:" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="firstNametb" HorizontalAlignment="Left" Height="23" Margin="121,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
+        <TextBox x:Name="lastNametb" HorizontalAlignment="Left" Height="23" Margin="501,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
+        <TextBox x:Name="numHitstb" HorizontalAlignment="Left" Height="23" Margin="66,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="citytb" HorizontalAlignment="Left" Height="23" Margin="477,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323"/>
+        <TextBox x:Name="streetNotb" HorizontalAlignment="Left" Height="23" Margin="289,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="58"/>
+        <TextBox x:Name="streettb" PreviewTextInput="NumberValidationTextBox"  HorizontalAlignment="Left" Height="23" Margin="23,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="178"/>
+        <DatePicker Name="hitTimetb" HorizontalAlignment="Left" Margin="66,254,0,0" VerticalAlignment="Top" Width="147"/>
+        <Separator HorizontalAlignment="Left" Height="20" Margin="0,56,0,0" VerticalAlignment="Top" Width="929" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator HorizontalAlignment="Left" Height="20" Margin="0,180,0,0" VerticalAlignment="Top" Width="800"/>
 
     </Grid>
 </UserControl>

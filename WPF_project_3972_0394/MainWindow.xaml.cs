@@ -13,8 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Maps.MapControl.WPF;
-
-
+using System.Text.RegularExpressions;
 
 namespace WPF_project_3972_0394
 {
@@ -27,5 +26,11 @@ namespace WPF_project_3972_0394
         {
             InitializeComponent();
         }
+
+        private void rep_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
+    
 }

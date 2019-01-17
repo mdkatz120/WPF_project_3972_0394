@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_project_3972_0394"
         xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        xmlns:UserControls="clr-namespace:WPF_project_3972_0394.UserControls"  
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="1400">
-    <Grid>
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition x:Name="header" Height="35px"></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -53,6 +54,6 @@
             <TextBox AcceptsReturn="True" />
         </DockPanel>
         <m:Map x:Name="myMap" CredentialsProvider="Ail8XeUG5S087RcQf-lnjankqb-eMNLDTXt6CjqSAMI6uudDOHLBDI3w-Pfg0Paj" Mode="Aerial" Grid.Column="2" Grid.RowSpan="4"/>
-     
+        <UserControls:ReportTemplate x:Name="rep" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" Loaded="rep_Loaded"></UserControls:ReportTemplate>
     </Grid>
 </Window>
