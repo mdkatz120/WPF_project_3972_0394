@@ -55,6 +55,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -74,12 +75,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\AddHitCommand.cs" />
+    <Compile Include="Converter\ConverterMultiHitParm.cs" />
+    <Compile Include="Models\HitModel.cs" />
     <Compile Include="UserControls\AnaliteTemplate.xaml.cs">
       <DependentUpon>AnaliteTemplate.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ReportTemplate.xaml.cs">
       <DependentUpon>ReportTemplate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\HitViewModel.cs" />
+    <Compile Include="ViewModel\IHitViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -146,6 +152,7 @@
       <Name>BE</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

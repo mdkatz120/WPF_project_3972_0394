@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_project_3972_0394.ViewModel;
 
 namespace WPF_project_3972_0394.UserControls
 {
@@ -21,9 +22,13 @@ namespace WPF_project_3972_0394.UserControls
     /// </summary>
     public partial class ReportTemplate : UserControl
     {
+        public HitViewModel CurrentVM { get; set; }
         public ReportTemplate()
         {
             InitializeComponent();
+            CurrentVM = new HitViewModel();
+
+            this.DataContext = CurrentVM;
         }
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {

@@ -53,7 +53,11 @@
             </Menu>
             <TextBox AcceptsReturn="True" />
         </DockPanel>
-        <m:Map x:Name="myMap" CredentialsProvider="Ail8XeUG5S087RcQf-lnjankqb-eMNLDTXt6CjqSAMI6uudDOHLBDI3w-Pfg0Paj" Mode="Aerial" Grid.Column="2" Grid.RowSpan="4"/>
-        <UserControls:ReportTemplate x:Name="rep" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" Loaded="rep_Loaded"></UserControls:ReportTemplate>
+        <m:Map x:Name="myMap" CredentialsProvider="Ail8XeUG5S087RcQf-lnjankqb-eMNLDTXt6CjqSAMI6uudDOHLBDI3w-Pfg0Paj" Mode="Aerial" Grid.Column="2" Grid.RowSpan="4" ZoomLevel="15" >
+			<m:Map.Center>
+				<m:Location AltitudeReference="Ground" Altitude="0" Longitude="35.2109524" Latitude="31.7799727"/>
+			</m:Map.Center>
+		</m:Map>
+		<UserControls:ReportTemplate x:Name="rep" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" Loaded="rep_Loaded" ></UserControls:ReportTemplate>
     </Grid>
 </Window>

@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Maps.MapControl.WPF;
 using System.Text.RegularExpressions;
+using WPF_project_3972_0394.ViewModel;
 
 namespace WPF_project_3972_0394
 {
@@ -22,9 +23,13 @@ namespace WPF_project_3972_0394
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
+            myMap.Center = new Location(31.7799727, 35.2109524);
+            
+            
         }
 
         private void rep_Loaded(object sender, RoutedEventArgs e)
