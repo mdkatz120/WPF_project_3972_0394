@@ -14,7 +14,7 @@ namespace BL
 {
     public class Locations
     {
-        string SvApiKey = "AIzaSyDTh-8m3U8TX3H6d67YnY8lbclsxJbfpMM";
+        string SvApiKey = "";
         public async Task<Location> GetAsyncCordinate(Location address)
         {
 
